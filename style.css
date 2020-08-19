@@ -1,0 +1,118 @@
+img {
+  max-width: 100%;
+}
+element.style {
+  color: white;
+}
+
+.web-title {
+  height: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background: rgb(1, 189, 173);
+  font-style: bold;
+  font-size: 40px;
+  font-family: math;
+}
+
+#imgsel{
+  border: cyan 2px solid;
+}
+
+h1, h2, h3{
+  font-family: 'Arial', 'Georgia', 'Times New Roman';
+  color: olive;
+}
+
+h1{
+  font-size: 30px;
+  font-weight: bold;
+  text-align:left;
+}
+
+h2{
+  font-size: 24px;
+  font-weight: bold;
+  text-align:left;
+}
+
+h3{
+  font-size: 18 px;
+  font-weight: bold;
+  text-align: center;
+}
+
+p{
+  color: navy;
+  text-align:center;
+}
+
+.navbar{
+    position: absolute;
+    right: 30px;
+}
+
+.navbar a{
+  background-color: gray;
+
+body {
+  width: 100%;
+  min-height:100%;
+  background-color: white;
+}
+
+.col {
+  width: 100%;
+  /* border: black 1px solid; */
+  /* Font color */
+  /* color:blue;  */
+} 
+
+.homebtn{
+  background-color: white;
+  z-index:2;
+}
+
+.homebtn a{
+  width: 110px;
+  background: grey;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  display: block;
+  padding: 14px;
+  margin: 0px 0px 0px 40px;
+}
+
+.divtop{
+  background-color: white;
+  z-index:2;
+}
+
+.divbdy{
+  background-color: white;
+  z-index:1;
+}
+
+.divtable{
+  text-align:center;
+  background-color: white;
+  z-index:1;
+}
+
+.divbtm {
+  width:100%;
+  /* position:absolute; */
+  bottom:0;
+  background-color: gray;
+  z-index:0;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  margin: 0px;
+}
