@@ -1,1 +1,94 @@
-<meta http-equiv="Refresh" content="0; url=WebVisualizations/landingpage.html">
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>WeatherPy Visualization</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./Assets/styles.css">
+  <link rel="stylesheet" type="text/css"href="./Assets/reset.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body class="grey-background">
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div>
+      <a class="web-title" style="color:white" href="index.html">Latitude</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+      
+    <div class="collapse navbar-collapse right-align shadow p-3 mb-5 bg-white rounded" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
+            Plots
+          </a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+            <a class="dropdown-item" href="./Assets/temperature.html">Temperature</a>
+            <a class="dropdown-item" href="./Assets/humidity.html">Humidity</a>
+            <a class="dropdown-item" href="./Assets/cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="./Assets/wind_speed.html">Wind Speed</a>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Assets/comparison.html">Comparison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Assets/data.html">Data</a>
+        </li>           
+      </ul>
+    </div>
+
+  </nav>
+</br>
+</br>
+</br>
+
+
+  <section class="row">
+
+
+    <div class="col col-10 col-lg-6 col-md-10 box offset-1">
+      <h1 class=header>Latitude Vs Weather</h1>
+      <hr>
+        
+        <p class=site_font>To understand how latitude affects weather, an analysis of four attributes (temperature, humidity, cloudiness, and wind speed) of weather versus latitude was done. Using data from OpenWeatherMap’s API and picking 600+ randomly selected locations around the globe from the citypy python library, plots were created to show the affects of latitude on the four attributes. There may be assumptions that can be made about how the weather is as we get closer to the equator, but this analysis can prove or disprove these assumptions. </p>
+      </br>
+        <p class=site_font>Using API calls to OpenWeatherMap, weather data for cities were collected and formatted into a Pandas data frame. This data collected can be viewed in the “Data” section of this site. It also shows on what date it was collected. Using MatPlotLib, the plots of latitude vs weather attribute were created. These plots can be viewed in the “Plots” section of this site. A comparison of all four plots can be viewed together in the “Comparison” section of this site.</p>
+      </br>
+
+    </div>
+
+
+    <div class="col col-10 col-lg-3 col-md-10 box offset-1">
+      <h2 class=header>Visualizations</h2>
+      <hr>
+        <a href="./Assets/temperature.html">
+        <img width=150 height=112 src="./Visualizations/Latitude Vs Temperature.PNG">
+        </a>
+        <a href="./Assets/humidity.html">
+        <img width=150 height=112 src="./Visualizations/Latitude Vs Humidity.PNG">
+        </a>
+        <a href="./Assets/cloudiness.html">
+        <img width=150 height=112 src="./Visualizations/Latitude Vs Cloudiness.PNG">
+        </a>
+        <a href="./Assets/wind_speed.html">
+        <img width=150 height=112 src="./Visualizations/Latitude Vs Wind Speed.PNG">
+        </a>
+    </div>
+
+
+  </section>
+
+  
+</body>
+
+
+
+</html>
